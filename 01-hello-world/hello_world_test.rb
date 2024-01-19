@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 begin
-  gem 'minitest', '>= 5.0.0'
-  require 'minitest/autorun'
+  gem 'minitest', '>= 5.0.0' # require gem minitest , gem is a package manager for ruby for installing libraries, minitest is a testing library for ruby to run tests, >= 5.0.0 is the version of the gem
+  require 'minitest/autorun' # require minitest/autorun, autorun is a minitest extension that runs tests automatically when the file is run
   require_relative 'hello_world'
 rescue Gem::LoadError => e
   puts "\nMissing Dependency:\n#{e.backtrace.first} #{e.message}"
