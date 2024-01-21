@@ -14,26 +14,27 @@ end
 
 class HelloWorldTest < Minitest::Test
   def test_no_method_name
+    #skip
     assert_equal 'Hello, World. My name is Wally!', HelloWorld.new('Wally').hello
   end
 
   def test_no_method_name_different_object_name
-    skip
+    #skip
     assert_equal 'Hello, World. My name is Daisy!', HelloWorld.new('Daisy').hello
   end
 
   def test_sample_name
-    skip
+    #skip
     assert_equal 'Hello, Alice. My name is Wally!', HelloWorld.new('Wally').hello('Alice')
   end
 
   def test_other_sample_name
-    skip
+     #skip
     assert_equal 'Hello, Bob. My name is Wally!', HelloWorld.new('Wally').hello('Bob')
   end
 
   def test_other_sample_name_with_different_object_name
-    skip
+    #skip
     assert_equal 'Hello, Bob. My name is Daisy!', HelloWorld.new('Daisy').hello('Bob')
   end
 end
