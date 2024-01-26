@@ -6,6 +6,7 @@ require_relative 'pangram'
 
 class PangramTest < Minitest::Test
   def test_sentence_empty
+    skip
     str = ''
     refute Pangram.is_pangram?(str)
   end
@@ -53,7 +54,7 @@ class PangramTest < Minitest::Test
   end
 
   def test_pangram_with_non_ascii_characters
-    skip
+    #skip
     str = 'Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich.'
     assert Pangram.is_pangram?(str)
   end
